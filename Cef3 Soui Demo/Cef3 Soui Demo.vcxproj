@@ -213,6 +213,9 @@
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building SoUI Resource</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\res\soui_res.rc2;%(Outputs)</Outputs>
     </CustomBuild>
+    <None Include="TestHTML\test.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="uires\uidef\init.xml" />

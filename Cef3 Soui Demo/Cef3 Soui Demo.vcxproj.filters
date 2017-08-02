@@ -80,6 +80,7 @@
     <None Include="res\soui_res.rc2">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="TestHTML\test.htm" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="uires\uidef\init.xml">

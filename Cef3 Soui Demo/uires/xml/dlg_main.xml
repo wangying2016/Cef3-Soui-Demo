@@ -11,8 +11,12 @@ translucent="1"
       <imgbtn name="btn_restore" skin="_skin.sys.btn.restore"  pos="-83,0" show="0" animate="1" />
       <imgbtn name="btn_min" skin="_skin.sys.btn.minimize" pos="-121,0" animate="1" />
     </caption>
+    
     <window pos="5,[2,-5,-5">
-      <cef pos="0,0,-0,-0" name="CefBrowser" url="www.baidu.com" colorBkgnd="#eeeeee"/>
+      <edit pos="2,2,-120,@30" name="edit_input_url" inset="5,0,5,-0" colorBkgnd="#aaaaaa">file:///TestHTML/test.htm</edit>
+      <button pos="[5,{,@50,@25" name="btn_go" focusable="0">Go</button>
+      <button pos="[5,{,@50,@25" name="btn_run_js" focusable="0">Run Js</button>
+      <cef pos="0,[,-0,-0" name="cef_browser" url="file:///TestHTML/test.htm" colorBkgnd="#eeeeee"/>
     </window>
   </root>
 </SOUI>
