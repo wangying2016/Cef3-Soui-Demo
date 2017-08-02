@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F6BB95B-21FE-3FA7-8CAC-599236FB2313}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>libcef_dll_wrapper</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libcef_dll_wrapper.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libcef_dll_wrapper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libcef_dll_wrapper.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libcef_dll_wrapper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libcef_dll_wrapper.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libcef_dll_wrapper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libcef_dll_wrapper.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libcef_dll_wrapper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;WIN32;_WIN32;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0602;_WIN32_WINNT=0x602;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;USING_CEF_SHARED;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;USING_CEF_SHARED;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CEF_SHARED;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CEF_SHARED;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CEF_SHARED;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CEF_SHARED;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CEF_SHARED;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;USING_CEF_SHARED;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HE:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll" "-BE:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper" --check-stamp-file "E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll/CMakeLists.txt;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystem.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeSystem.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.9\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.9\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeRCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.9\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HE:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll" "-BE:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper" --check-stamp-file "E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll/CMakeLists.txt;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystem.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeSystem.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.9\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.9\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeRCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.9\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HE:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll" "-BE:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper" --check-stamp-file "E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll/CMakeLists.txt;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystem.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeSystem.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.9\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.9\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeRCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.9\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\CMake\bin\cmake.exe "-HE:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll" "-BE:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper" --check-stamp-file "E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll/CMakeLists.txt;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineSystem.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystem.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeSystem.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.9\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-Determine-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerId.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCompilerIdDetection.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\TI-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\CMake\share\cmake-3.9\Modules\CompilerId\VS-10.vcxproj.in;D:\CMake\share\cmake-3.9\Modules\CMakeFindBinUtils.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeRCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestRCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompilerABI.c;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.9\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCXXCompiler.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeTestCompilerCommon.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompilerABI.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeParseImplicitLinkInfo.cmake;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp;D:\CMake\share\cmake-3.9\Modules\CMakeDetermineCompileFeatures.cmake;D:\CMake\share\cmake-3.9\Modules\Internal\FeatureTesting.cmake;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\feature_tests.cxx;D:\CMake\share\cmake-3.9\Modules\CMakeCXXCompiler.cmake.in;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\3.9.0\CMakeCXXCompiler.cmake;E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\transfer_util.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\transfer_util.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper_types.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_atomicops_x86_gcc.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_bind_helpers.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_callback_helpers.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_callback_internal.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_lock.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_lock_impl.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_logging.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_ref_counted.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_string16.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_thread_checker_impl.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_thread_collision_warner.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\base\cef_weak_ptr.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\app_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\app_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\base_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\base_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\browser_process_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\browser_process_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\client_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\client_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\completion_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\completion_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\context_menu_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\context_menu_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\cookie_visitor_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\cookie_visitor_cpptoc.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\delete_cookies_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\delete_cookies_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\dialog_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\dialog_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\display_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\display_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\domvisitor_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\domvisitor_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\download_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\download_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\drag_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\drag_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\end_tracing_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\end_tracing_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\find_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\find_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\focus_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\focus_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\geolocation_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\geolocation_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\get_geolocation_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\get_geolocation_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\jsdialog_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\jsdialog_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\keyboard_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\keyboard_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\life_span_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\life_span_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\load_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\load_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\navigation_entry_visitor_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\navigation_entry_visitor_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\pdf_print_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\pdf_print_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\print_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\print_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\read_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\read_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\render_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\render_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\render_process_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\render_process_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\request_context_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\request_context_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\request_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\request_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\resolve_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\resolve_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\resource_bundle_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\resource_bundle_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\resource_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\resource_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\response_filter_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\response_filter_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\run_file_dialog_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\run_file_dialog_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\scheme_handler_factory_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\scheme_handler_factory_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\set_cookie_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\set_cookie_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\string_visitor_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\string_visitor_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\task_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\task_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\urlrequest_client_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\urlrequest_client_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\v8accessor_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\v8accessor_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\v8handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\v8handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\web_plugin_info_visitor_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\web_plugin_info_visitor_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\web_plugin_unstable_callback_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\web_plugin_unstable_callback_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\write_handler_cpptoc.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\cpptoc\write_handler_cpptoc.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\auth_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\auth_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\before_download_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\before_download_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\binary_value_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\binary_value_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\browser_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\browser_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\browser_host_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\browser_host_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\command_line_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\command_line_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\context_menu_params_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\context_menu_params_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\cookie_manager_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\cookie_manager_ctocpp.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\dictionary_value_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\dictionary_value_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\domdocument_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\domdocument_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\domnode_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\domnode_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\download_item_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\download_item_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\download_item_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\download_item_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\drag_data_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\drag_data_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\file_dialog_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\file_dialog_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\frame_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\frame_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\geolocation_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\geolocation_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\jsdialog_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\jsdialog_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\list_value_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\list_value_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\menu_model_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\menu_model_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\navigation_entry_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\navigation_entry_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\post_data_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\post_data_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\post_data_element_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\post_data_element_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\print_dialog_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\print_dialog_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\print_job_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\print_job_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\print_settings_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\print_settings_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\process_message_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\process_message_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\request_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\request_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\request_context_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\request_context_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\request_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\request_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\resource_bundle_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\resource_bundle_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\response_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\response_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\run_context_menu_callback_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\run_context_menu_callback_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\scheme_registrar_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\scheme_registrar_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\sslcert_principal_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\sslcert_principal_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\sslinfo_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\sslinfo_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\stream_reader_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\stream_reader_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\stream_writer_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\stream_writer_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\task_runner_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\task_runner_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\urlrequest_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\urlrequest_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8context_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8context_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8exception_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8exception_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8stack_frame_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8stack_frame_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8stack_trace_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8stack_trace_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8value_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\v8value_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\value_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\value_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\web_plugin_info_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\web_plugin_info_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\xml_reader_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\xml_reader_ctocpp.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\zip_reader_ctocpp.cc" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\ctocpp\zip_reader_ctocpp.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_app.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_auth_callback.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_base.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_browser.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_browser_process_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_callback.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_client.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_command_line.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_context_menu_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_cookie.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_dialog_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_display_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_dom.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_download_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_download_item.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_drag_data.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_drag_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_find_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_focus_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_frame.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_geolocation.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_geolocation_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_jsdialog_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_keyboard_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_life_span_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_load_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_menu_model.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_navigation_entry.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_origin_whitelist.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_pack_resources.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_pack_strings.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_parser.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_path_util.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_print_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_print_settings.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_process_message.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_process_util.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_render_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_render_process_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_request.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_request_context.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_request_context_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_request_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_resource_bundle.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_resource_bundle_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_resource_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_response.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_response_filter.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_runnable.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_scheme.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_ssl_info.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_stream.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_string_visitor.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_task.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_trace.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_urlrequest.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_v8.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_values.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_version.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_web_plugin.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_xml_reader.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_zip_reader.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\cef_sandbox_win.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_atomic_ref_count.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_atomicops.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_basictypes.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_bind.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_bind_helpers.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_build.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_callback.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_callback_forward.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_callback_helpers.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_callback_list.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_cancelable_callback.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_lock.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_logging.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_macros.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_move.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_platform_thread.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_ref_counted.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_scoped_ptr.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_string16.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_template_util.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_thread_checker.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_thread_collision_warner.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_trace_event.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_tuple.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\cef_weak_ptr.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\internal\cef_bind_internal.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\internal\cef_callback_internal.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\internal\cef_lock_impl.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\internal\cef_raw_scoped_refptr_mismatch_checker.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\internal\cef_thread_checker_impl.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\internal\cef_atomicops_x86_msvc.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\base\internal\cef_bind_internal_win.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_app_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_auth_callback_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_base_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_browser_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_browser_process_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_callback_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_client_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_command_line_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_context_menu_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_cookie_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_dialog_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_display_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_dom_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_download_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_download_item_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_drag_data_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_drag_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_find_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_focus_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_frame_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_geolocation_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_geolocation_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_jsdialog_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_keyboard_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_life_span_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_load_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_menu_model_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_navigation_entry_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_origin_whitelist_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_parser_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_path_util_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_print_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_print_settings_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_process_message_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_process_util_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_render_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_render_process_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_request_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_request_context_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_request_context_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_request_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_resource_bundle_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_resource_bundle_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_resource_handler_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_response_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_response_filter_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_scheme_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_ssl_info_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_stream_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_string_visitor_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_task_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_trace_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_urlrequest_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_v8_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_values_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_web_plugin_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_xml_reader_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\capi\cef_zip_reader_capi.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_export.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_logging_internal.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_ptr.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_string.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_string_list.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_string_map.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_string_multimap.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_string_types.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_string_wrappers.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_thread_internal.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_time.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_trace_event_internal.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_types.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_types_wrappers.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_types_win.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\internal\cef_win.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\wrapper\cef_byte_read_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\wrapper\cef_closure_task.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\wrapper\cef_helpers.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\wrapper\cef_message_router.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\wrapper\cef_resource_manager.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\wrapper\cef_stream_resource_handler.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\wrapper\cef_xml_object.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\include\wrapper\cef_zip_archive.h" />
+    <ClInclude Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\cef_browser_info_map.h" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\cef_byte_read_handler.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\cef_closure_task.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\cef_message_router.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\cef_resource_manager.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\cef_stream_resource_handler.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\cef_xml_object.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\cef_zip_archive.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\libcef_dll_wrapper.cc" />
+    <ClCompile Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll\wrapper\libcef_dll_wrapper2.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\myproject\[Collection] workspace\Cef3 Soui Demo\Cef3\libcef_dll_wrapper\ZERO_CHECK.vcxproj">
+      <Project>{ECC93716-5E4D-36D7-AC38-88D97CE4A913}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

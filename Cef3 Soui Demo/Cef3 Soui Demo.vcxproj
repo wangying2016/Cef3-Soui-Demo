@@ -92,7 +92,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)cef3;$(SOUIPATH)\config;$(SOUIPATH)\components;$(SOUIPATH)\SOUI\include;$(SOUIPATH)\utilities\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <BrowseInformation>true</BrowseInformation>
@@ -102,8 +102,8 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>$(SOUIPATH)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>utilitiesd.lib;souid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\cef3\libcef_dll_wrapper\$(Configuration);$(SolutionDir)\cef3\lib;$(SOUIPATH)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcef.lib;libcef_dll_wrapper.lib;utilitiesd.lib;souid.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
