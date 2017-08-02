@@ -172,6 +172,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cef3 Soui Demo.cpp" />
+    <ClCompile Include="CefWebView\BrowserHandler.cpp" />
+    <ClCompile Include="CefWebView\Cef3WebView.cpp" />
+    <ClCompile Include="CefWebView\CefClientApp.cpp" />
+    <ClCompile Include="CefWebView\CefUtil.cpp" />
     <ClCompile Include="MainDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -184,6 +188,11 @@
     <ResourceCompile Include="Cef3 Soui Demo.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CefWebView\BrowserHandler.h" />
+    <ClInclude Include="CefWebView\Cef3WebView.h" />
+    <ClInclude Include="CefWebView\CefClientApp.h" />
+    <ClInclude Include="CefWebView\CefUtil.h" />
+    <ClInclude Include="CefWebView\ExtendEvents.h" />
     <ClInclude Include="MainDlg.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
