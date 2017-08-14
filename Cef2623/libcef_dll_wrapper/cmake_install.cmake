@@ -1,4 +1,4 @@
-# Install script for directory: E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll
+# Install script for directory: E:/myproject/[Collection] cef/Cef3 Soui Demo/Cef2623/libcef_dll
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/myproject/[Collection] workspace/Cef3 Soui Demo/Cef3/libcef_dll_wrapper/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/myproject/[Collection] cef/Cef3 Soui Demo/Cef2623/libcef_dll_wrapper/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

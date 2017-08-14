@@ -59,6 +59,7 @@ BOOL CefClientApp::Initialize()
 	settings.remote_debugging_port = 5050;
 	settings.uncaught_exception_stack_size = 100;
 	settings.windowless_rendering_enabled = true;
+	//settings.multi_threaded_message_loop = true;
 	//settings.single_process = true;
 	//CefString(&settings.cache_path) = _T("cache\0");
 

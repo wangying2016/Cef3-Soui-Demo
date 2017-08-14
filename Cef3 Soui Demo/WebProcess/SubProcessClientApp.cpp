@@ -55,8 +55,8 @@ void SubProcessClientApp::OnContextCreated(CefRefPtr<CefBrowser> browser,
 	CefRefPtr<CefFrame> frame,
 	CefRefPtr<CefV8Context> context)
 {
+	MessageBox(NULL, L"OnContextCreated", L"Inform", MB_OK);
 	CefRefPtr<CefV8Value> object = context->GetGlobal();
-
 	CefRefPtr<CefV8Handler> handler = new HtmlEventHandler();
 	CefRefPtr<CefV8Value> func = CefV8Value::CreateFunction("HandleEvent", handler);
 	object->SetValue("HandleEvent", func, V8_PROPERTY_ATTRIBUTE_NONE);
